@@ -7,8 +7,12 @@ export const Navbar = () => {
   return (
     <nav className="fixed top-0 w-full bg-background/80 backdrop-blur-md z-50 border-b">
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
-        <a href="/" className="font-playfair text-xl font-bold">
-          Conceito em Unhas
+        <a href="/" className="flex items-center gap-2">
+          <img 
+            src="/lovable-uploads/39a873b2-3eab-4fb2-998d-e294b26f0158.png"
+            alt="Logo Jhullie Ramos"
+            className="h-8"
+          />
         </a>
         
         <div className="hidden md:flex items-center gap-6">
