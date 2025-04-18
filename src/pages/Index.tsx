@@ -52,7 +52,14 @@ const Index = () => {
             Nossos Serviços
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card>
+            <Card className="overflow-hidden group">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=1000"
+                  alt="Alongamentos"
+                  className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                />
+              </div>
               <CardContent className="p-6">
                 <h3 className="font-bold text-xl mb-3">Alongamentos</h3>
                 <p className="text-muted-foreground">
@@ -60,7 +67,14 @@ const Index = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="overflow-hidden group">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1610992015732-2449b0c26670?q=80&w=1000"
+                  alt="Manicure"
+                  className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                />
+              </div>
               <CardContent className="p-6">
                 <h3 className="font-bold text-xl mb-3">Manicure</h3>
                 <p className="text-muted-foreground">
@@ -68,7 +82,14 @@ const Index = () => {
                 </p>
               </CardContent>
             </Card>
-            <Card>
+            <Card className="overflow-hidden group">
+              <div className="relative h-64 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=1000"
+                  alt="Pedicure"
+                  className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                />
+              </div>
               <CardContent className="p-6">
                 <h3 className="font-bold text-xl mb-3">Pedicure</h3>
                 <p className="text-muted-foreground">
@@ -87,27 +108,43 @@ const Index = () => {
             Cursos Profissionalizantes
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="font-bold text-xl mb-3">Curso para Iniciantes</h3>
-                <p className="text-muted-foreground mb-4">
-                  Aprenda as técnicas fundamentais para começar sua carreira.
-                </p>
-                <Button onClick={handleWhatsAppClick} variant="secondary">
-                  Saiba Mais
-                </Button>
-              </CardContent>
+            <Card className="overflow-hidden group">
+              <div className="relative h-80 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1560066984-138dadb4c035?q=80&w=1000"
+                  alt="Curso para Iniciantes"
+                  className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-0 p-6 text-white">
+                  <h3 className="font-bold text-xl mb-3">Curso para Iniciantes</h3>
+                  <p className="mb-4">
+                    Aprenda as técnicas fundamentais para começar sua carreira.
+                  </p>
+                  <Button onClick={handleWhatsAppClick} variant="secondary">
+                    Saiba Mais
+                  </Button>
+                </div>
+              </div>
             </Card>
-            <Card>
-              <CardContent className="p-6">
-                <h3 className="font-bold text-xl mb-3">Aperfeiçoamento</h3>
-                <p className="text-muted-foreground mb-4">
-                  Eleve suas habilidades ao próximo nível com técnicas avançadas.
-                </p>
-                <Button onClick={handleWhatsAppClick} variant="secondary">
-                  Saiba Mais
-                </Button>
-              </CardContent>
+            <Card className="overflow-hidden group">
+              <div className="relative h-80 overflow-hidden">
+                <img
+                  src="https://images.unsplash.com/photo-1603816245457-fe9c80b740ff?q=80&w=1000"
+                  alt="Aperfeiçoamento"
+                  className="w-full h-full object-cover transition-transform group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-0 p-6 text-white">
+                  <h3 className="font-bold text-xl mb-3">Aperfeiçoamento</h3>
+                  <p className="mb-4">
+                    Eleve suas habilidades ao próximo nível com técnicas avançadas.
+                  </p>
+                  <Button onClick={handleWhatsAppClick} variant="secondary">
+                    Saiba Mais
+                  </Button>
+                </div>
+              </div>
             </Card>
           </div>
         </div>
