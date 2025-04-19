@@ -1,4 +1,4 @@
-import { Instagram, MapPin, Phone, Mail, Clock, Star, Heart } from "lucide-react";
+import { Instagram, MapPin, Phone, Mail, Clock, Star, Heart, WhatsApp } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Navbar } from "@/components/Navbar";
@@ -13,7 +13,7 @@ const Index = () => {
   };
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
       <Navbar />
       
       {/* Hero Section */}
@@ -256,10 +256,15 @@ const Index = () => {
             <div className="space-y-4">
               <h3 className="font-bold text-lg">Contato</h3>
               <div className="space-y-3 text-muted-foreground">
-                <div className="flex items-start gap-2">
+                <a
+                  href="https://goo.gl/maps/YourGoogleMapsLink"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-start gap-2 hover:text-primary transition-colors"
+                >
                   <MapPin className="h-4 w-4 mt-1" />
                   <span>Rua Palmeiras, 410 - Vera Cruz<br />Gravataí - RS</span>
-                </div>
+                </a>
                 <div className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
                   <span>(51) 99248-5593</span>
@@ -284,6 +289,15 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      {/* Floating WhatsApp Button */}
+      <button
+        onClick={handleWhatsAppClick}
+        className="fixed bottom-6 right-6 bg-[#25D366] hover:bg-[#20BA5C] text-white rounded-full p-4 shadow-lg transition-transform hover:scale-110 z-50"
+        aria-label="Chat on WhatsApp"
+      >
+        <WhatsApp className="h-6 w-6" />
+      </button>
     </div>
   );
 };
