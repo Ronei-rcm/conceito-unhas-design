@@ -9,9 +9,9 @@ export const Navbar = () => {
       <div className="container mx-auto px-4 h-16 flex items-center justify-between">
         <a href="/" className="flex items-center gap-2">
           <img 
-            src="/lovable-uploads/39a873b2-3eab-4fb2-998d-e294b26f0158.png"
+            src="/lovable-uploads/25402ffa-ba53-4a53-84a7-781c5e680dab.png"
             alt="Logo Jhullie Ramos"
-            className="h-8"
+            className="h-10"
           />
         </a>
         

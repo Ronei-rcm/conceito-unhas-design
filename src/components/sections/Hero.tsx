@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 
 interface HeroProps {
@@ -11,7 +10,7 @@ export const Hero = ({ onWhatsAppClick }: HeroProps) => {
       <div className="container mx-auto grid md:grid-cols-2 gap-8 items-center">
         <div className="text-left">
           <img 
-            src="/lovable-uploads/39a873b2-3eab-4fb2-998d-e294b26f0158.png"
+            src="/lovable-uploads/25402ffa-ba53-4a53-84a7-781c5e680dab.png"
             alt="Logo Jhullie Ramos"
             className="w-60 mb-6"
           />

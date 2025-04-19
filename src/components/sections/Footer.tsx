@@ -1,4 +1,3 @@
-
 import { Instagram, Phone, Mail, MapPin, Clock, Star, Heart } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Separator } from "@/components/ui/separator";
@@ -14,7 +13,7 @@ export const Footer = ({ onWhatsAppClick }: FooterProps) => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
           <div className="space-y-4">
             <img 
-              src="/lovable-uploads/39a873b2-3eab-4fb2-998d-e294b26f0158.png"
+              src="/lovable-uploads/25402ffa-ba53-4a53-84a7-781c5e680dab.png"
               alt="Logo Conceito em Unhas"
               className="w-40"
             />
